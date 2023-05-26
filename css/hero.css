@@ -1,0 +1,139 @@
+.hero{
+    background-image: url("../images/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     padding-bottom: 200px;
+     padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+
+}
+.hero .hero-text{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+
+}
+.hero .hero-text h3{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .hero-text h1{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.hero .hero-text p{
+    font-size:1.3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    
+}
+.hero .hero-text .box-input {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .20rem;
+   
+}
+
+.hero .hero-text .box-input input {
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+.hero .hero-text .box-input a{
+    text-decoration: none;
+    background-color: tomato;
+    color: white;
+    display: inline-block;
+    padding: 1.2rem;
+    border-radius: 50px;
+}
+.hero .hero-image{
+    width: 100%;
+    text-align: center;
+    position: relative
+}
+ .hero .hero-image img{
+  width: 90%;
+  border-radius: 10px;
+ }
+.hero .hero-image::after{
+    content: '40%';
+    position: absolute;
+    bottom:-2rem;
+    left:.70rem;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #F50400;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+    
+}
+
+.hero .hero-image::before{
+    content: '$22';
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: block;
+    background-color: #5BC3EB;
+    width: 70px;
+    height: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+@media (min-width:920px) {
+    .hero{
+        flex-direction: row;
+        
+    }
+    
+    .hero .hero-image img{
+        width:340px;
+    }
+
+    .hero .hero-image::after{
+        bottom: -2rem;
+        left: 6rem;
+    }
+    .hero .hero-image::before{
+    position: absolute;
+        top: 2rem;
+        right: 9rem;
+    }
+}
+
+@media (min-width:1389px) {
+    .hero .hero-image::after {
+            bottom: -2rem;
+            left: 11rem;
+        }
+    
+        .hero .hero-image::before {
+            position: absolute;
+            top: 2rem;
+            right: 14rem;
+        }
+}

@@ -1,0 +1,96 @@
+.contact{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url('../images/background-color.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px ;
+}
+
+
+.contact .box-contact{
+    background-color: #f5f0f0;
+    padding: .50rem;
+    max-width: 90%;
+    border-radius: 5px;
+
+}
+.contact .box-contact h2 {
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact .box-contact h2 span {
+    color: #46c2c2;
+    font-size: 2.1rem;
+    
+    
+}
+.contact .box-contact p{
+    font-size: 1.1rem;
+    margin-bottom: 2.1rem;
+
+}
+.contact .box-contact .red{
+    color: #FF6B6B;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.contact .box-contact .btn{
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #FF6B6B;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+
+.contact .box-contact .search-input{
+    width: 95%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+    border-radius:50px;
+    
+    
+}
+ .contact .box-contact .search-input input{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+
+ }
+
+ .contact .box-contact .search-input a{
+    background: #FF6B6B;
+    color: #fff;
+    padding: .65rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    
+ }
+
+
+ @media (min-width:920px) {
+    .contact{
+        grid-template-columns: 1fr 1fr;
+    }
+
+        .contact .box-contact {
+        
+            padding: 1rem;
+            max-width: 95%;
+          
+    
+        }
+ }
